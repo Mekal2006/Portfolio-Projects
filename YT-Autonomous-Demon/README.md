@@ -9,15 +9,15 @@
 
 <h2>1. Executive Summary & Architectural Philosophy</h2>
 <p><b>System Name:</b> YT Autonomous Demon (Influencer Automation Engine)</p>
-<p><b>Core Philosophy:</b> YT Autonomous Demon is a highly advanced Just-In-Time (JIT) processing pipeline engineered specifically to dominate the YouTube Shorts algorithm. Rather than pre-rendering and warehousing large libraries of finished video, it materializes each YouTube Short exactly at the moment of execution, processes it, ships it, and ruthlessly reclaims disk space immediately.</p>
-<p>The Python codebase is engineered with strict C++-style discipline—featuring explicit resource lifecycles, bounds-checked buffer handling, and deterministic cleanup via <code>try/finally</code> blocks. This prevents the long-running, unattended daemon from leaking memory, disk space, or file handles over a rigorous 90-day operating lifecycle.</p>
+<p><b>Core Philosophy:</b> YT Autonomous Demon is a highly advanced Just-In-Time (JIT) processing pipeline engineered specifically to dominate the YouTube Shorts algorithm. Rather than pre-rendering a[...]</p>
+<p>The Python codebase is engineered with strict C++-style discipline—featuring explicit resource lifecycles, bounds-checked buffer handling, and deterministic cleanup via <code>try/finally</code> b[...]</p>
 
 <h3>The "Smart" Autonomy Matrix</h3>
 <p>This engine is not a simple script; it is a self-regulating, autonomous brain governed by five architectural pillars:</p>
 <ul>
   <li><b>Zero-Bloat Garbage Collection:</b> Every heavy artifact (raw chunks, rendered Shorts, extracted frames) is deleted the instant it is no longer needed. Local SSD storage remains pristine.</li>
   <li><b>Smart Cache Hit:</b> Before touching the network or invoking the CPU-heavy FFmpeg codec, the daemon intelligently checks for existing payloads.</li>
-  <li><b>Hardware Interrupt Execution:</b> The daemon does not rely on volatile 24-hour Python RAM sleeps. It executes via Windows Task Scheduler, firing a hardware-level OS interrupt at a precise daily time.</li>
+  <li><b>Hardware Interrupt Execution:</b> The daemon does not rely on volatile 24-hour Python RAM sleeps. It executes via Windows Task Scheduler, firing a hardware-level OS interrupt at a precise dai[...]</li>
   <li><b>Quota-Aware State Machine:</b> Distinguishes between transient network errors and API quota exhaustion (429/400). It triggers an immediate, clean self-termination to protect the database.</li>
   <li><b>Infinite JIT Allocation:</b> Dynamically scans the timeline for the absolute tail pointer, compiling the next 180-video matrix in RAM.</li>
 </ul>
@@ -159,7 +159,7 @@
 <hr size="2" color="#e1e4e8">
 
 <h2>6. Proof of Work</h2>
-<p><i>(Note: The source code for this proprietary JIT architecture remains closed-source to protect the intellectual property.  Below are the snapshots of the modular file hierarchy and the terminal on the host machine.)</i></p>
+<p><i>(Note: The source code for this proprietary JIT architecture remains closed-source to protect the intellectual property.  Below are the snapshots of the modular file hierarchy and the termi[...]</p>
 
 <h3>Internal System Architecture Snapshot</h3>
 
